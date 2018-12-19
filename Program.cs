@@ -14,8 +14,9 @@ namespace Condition06
             string userMonth = Console.ReadLine();
 
             /* une boucle if - else if - else avec opérateurs logiques OU "||"
-            est également possible voire plus simple à écrire */
+            est également possible voire plus simple à écrire... */
 
+            // Différents cas :
             switch (userMonth)
             {
                 case "Septembre":
@@ -39,10 +40,11 @@ namespace Condition06
                 case "Août":
                     Console.WriteLine("La saison du mois saisie est l'Eté !");
                     break;
-
-                default:
-                    Console.WriteLine("Je n'ai pas compris... Essayez d'écrire le mois avec une Majuscule !");
+                default: // Permet d'afficher un message si l'utilisateur n'entre pas correctement un mois
+                    Console.WriteLine("Je n'ai pas compris... Vérifier votre orthographe ! Essayez d'écrire le mois avec une Majuscule et n'oubliez pas les accents !");
                     break;
+               /* On aurait pu également prendre en compte un mois écrit sans majuscule au début en ajoutant des cas sans maj
+               exemple : case "mars": */
             }
         }
     }
